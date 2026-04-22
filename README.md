@@ -1,8 +1,6 @@
-# foolstrap
+# Fool's trap
 
-Fool's trap is a lightweight Windows x64 program that sends back a fake banner as a reponse of a scan or a request.
-
-As a socket listening server Fool's trap wait for an incoming connection on a TCP port on your Windows machine then reads the request of a client and sends a fake answer back to this client.
+Fool's trap is a lightweight Windows x64 command-line socket listening server that listens for a request then sends back a fake banner as a reponse of a scan or a request.
 
 This tool can be used for:
 - Cyberdeception
@@ -24,7 +22,7 @@ Installation is easy: just download the executable.
 
 Actually there is no threat but Windows Defender displays a warning message after downloading the executable. To avoid Windows Defender blue screen "Windows protected your PC" you have 2 options:
 
-1. Right click on the file, check "Unblock" then click "Apply" button.
+1. Right click on the file dowloaded, check "Unblock" then click "Apply" button. Step 2 is over.
 
 ![Unblock](images/unblock.png)
 
@@ -37,7 +35,7 @@ or
 
 ## Step 3: Allowing access to the network (Windows Firewall)
 
-Because the software use network connections to be connected to it then Windows Firewall shows another popup the first time to allow or block the application to get network access.
+Because the software wiats for network connections then Windows Firewall shows another popup the first time to allow or block the application to get network access.
 
 Just click "Allow" button.
 
@@ -61,7 +59,7 @@ On a remote computer you can reach this server. Here are 2 examples of usage:
 telnet 192.168.1.93 11111
 ```
 
-Press Enter twice and you will get:
+Press Enter a second time and you will get:
 
 ``` PowerShell
 
@@ -71,7 +69,7 @@ Connection to host lost.
 PS C:\Users\tcm>
 ```
 
-On the server you will read:
+On the server you will read some information on the client:
 
 ``` PowerShell
 C:\>foolstrap.exe
@@ -152,7 +150,7 @@ cpu     5%
 
 ```
 
-The port is seen as open.
+The port is seen as open. The banner is confusing the client. Detection takes time. Good.
 
 
 # Commands
