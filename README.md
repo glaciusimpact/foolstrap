@@ -157,7 +157,7 @@ The port is seen as open. The banner is confusing the client. Detection takes ti
 
 Supported commands are:
 
-"/v" or "-v" to get sofware version.
+"/v" or "-v" to get software version.
 
 ``` PowerShell
 C:\>foolstrap.exe -v
